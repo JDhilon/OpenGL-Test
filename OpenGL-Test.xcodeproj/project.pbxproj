@@ -26,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6E2474E72390664100385A3C /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
+		6E2474E82390664F00385A3C /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
 		6E5EDE65238CF8BF00416541 /* OpenGL-Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "OpenGL-Test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5EDE68238CF8BF00416541 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6E5EDE70238CFA4400416541 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -68,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				6E5EDE68238CF8BF00416541 /* main.cpp */,
+				6E2474E82390664F00385A3C /* textures */,
+				6E2474E72390664100385A3C /* shaders */,
 			);
 			path = "OpenGL-Test";
 			sourceTree = "<group>";
