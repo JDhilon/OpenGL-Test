@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E2474F823906B3300385A3C /* directional_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2474EB23906B3200385A3C /* directional_light.cpp */; };
+		6E2474F923906B3300385A3C /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2474ED23906B3200385A3C /* material.cpp */; };
+		6E2474FA23906B3300385A3C /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2474EE23906B3200385A3C /* camera.cpp */; };
+		6E2474FB23906B3300385A3C /* mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2474F123906B3200385A3C /* mesh.cpp */; };
+		6E2474FC23906B3300385A3C /* light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2474F223906B3200385A3C /* light.cpp */; };
+		6E2474FD23906B3300385A3C /* point_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2474F423906B3200385A3C /* point_light.cpp */; };
+		6E2474FE23906B3300385A3C /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2474F723906B3300385A3C /* shader.cpp */; };
+		6E24750423906B4000385A3C /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E24750023906B3F00385A3C /* texture.cpp */; };
+		6E24750523906B4000385A3C /* spot_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E24750323906B4000385A3C /* spot_light.cpp */; };
+		6E24750A23906B4D00385A3C /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E24750623906B4D00385A3C /* window.cpp */; };
 		6E5EDE69238CF8BF00416541 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EDE68238CF8BF00416541 /* main.cpp */; };
 		6E5EDE71238CFA4400416541 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5EDE70238CFA4400416541 /* OpenGL.framework */; };
 		6E5EDE75238CFAA100416541 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5EDE74238CFAA100416541 /* libglfw.3.3.dylib */; };
@@ -26,8 +36,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6E2474E72390664100385A3C /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
-		6E2474E82390664F00385A3C /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
+		6E2474E923906B3200385A3C /* material.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = material.hpp; sourceTree = "<group>"; };
+		6E2474EA23906B3200385A3C /* directional_light.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = directional_light.hpp; sourceTree = "<group>"; };
+		6E2474EB23906B3200385A3C /* directional_light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = directional_light.cpp; sourceTree = "<group>"; };
+		6E2474EC23906B3200385A3C /* light.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = light.hpp; sourceTree = "<group>"; };
+		6E2474ED23906B3200385A3C /* material.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = material.cpp; sourceTree = "<group>"; };
+		6E2474EE23906B3200385A3C /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camera.cpp; sourceTree = "<group>"; };
+		6E2474EF23906B3200385A3C /* shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
+		6E2474F023906B3200385A3C /* point_light.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = point_light.hpp; sourceTree = "<group>"; };
+		6E2474F123906B3200385A3C /* mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mesh.cpp; sourceTree = "<group>"; };
+		6E2474F223906B3200385A3C /* light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = light.cpp; sourceTree = "<group>"; };
+		6E2474F323906B3200385A3C /* camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = camera.hpp; sourceTree = "<group>"; };
+		6E2474F423906B3200385A3C /* point_light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = point_light.cpp; sourceTree = "<group>"; };
+		6E2474F623906B3200385A3C /* mesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mesh.hpp; sourceTree = "<group>"; };
+		6E2474F723906B3300385A3C /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
+		6E2474FF23906B3F00385A3C /* spot_light.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = spot_light.hpp; sourceTree = "<group>"; };
+		6E24750023906B3F00385A3C /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = texture.cpp; sourceTree = "<group>"; };
+		6E24750123906B3F00385A3C /* texture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = texture.hpp; sourceTree = "<group>"; };
+		6E24750223906B4000385A3C /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		6E24750323906B4000385A3C /* spot_light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spot_light.cpp; sourceTree = "<group>"; };
+		6E24750623906B4D00385A3C /* window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = window.cpp; sourceTree = "<group>"; };
+		6E24750823906B4D00385A3C /* window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = window.hpp; sourceTree = "<group>"; };
+		6E24750C23906BCD00385A3C /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shaders; sourceTree = "<group>"; };
+		6E24750D23906BD400385A3C /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Textures; sourceTree = "<group>"; };
+		6E24750F23906CA200385A3C /* common_values.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = common_values.hpp; sourceTree = "<group>"; };
 		6E5EDE65238CF8BF00416541 /* OpenGL-Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "OpenGL-Test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5EDE68238CF8BF00416541 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6E5EDE70238CFA4400416541 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -69,9 +101,31 @@
 		6E5EDE67238CF8BF00416541 /* OpenGL-Test */ = {
 			isa = PBXGroup;
 			children = (
+				6E24750D23906BD400385A3C /* Textures */,
+				6E24750C23906BCD00385A3C /* Shaders */,
 				6E5EDE68238CF8BF00416541 /* main.cpp */,
-				6E2474E82390664F00385A3C /* textures */,
-				6E2474E72390664100385A3C /* shaders */,
+				6E24750F23906CA200385A3C /* common_values.hpp */,
+				6E24750623906B4D00385A3C /* window.cpp */,
+				6E24750823906B4D00385A3C /* window.hpp */,
+				6E24750323906B4000385A3C /* spot_light.cpp */,
+				6E2474FF23906B3F00385A3C /* spot_light.hpp */,
+				6E24750223906B4000385A3C /* stb_image.h */,
+				6E24750023906B3F00385A3C /* texture.cpp */,
+				6E24750123906B3F00385A3C /* texture.hpp */,
+				6E2474EE23906B3200385A3C /* camera.cpp */,
+				6E2474F323906B3200385A3C /* camera.hpp */,
+				6E2474EB23906B3200385A3C /* directional_light.cpp */,
+				6E2474EA23906B3200385A3C /* directional_light.hpp */,
+				6E2474F223906B3200385A3C /* light.cpp */,
+				6E2474EC23906B3200385A3C /* light.hpp */,
+				6E2474ED23906B3200385A3C /* material.cpp */,
+				6E2474E923906B3200385A3C /* material.hpp */,
+				6E2474F123906B3200385A3C /* mesh.cpp */,
+				6E2474F623906B3200385A3C /* mesh.hpp */,
+				6E2474F423906B3200385A3C /* point_light.cpp */,
+				6E2474F023906B3200385A3C /* point_light.hpp */,
+				6E2474F723906B3300385A3C /* shader.cpp */,
+				6E2474EF23906B3200385A3C /* shader.hpp */,
 			);
 			path = "OpenGL-Test";
 			sourceTree = "<group>";
@@ -142,7 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E24750523906B4000385A3C /* spot_light.cpp in Sources */,
+				6E2474FA23906B3300385A3C /* camera.cpp in Sources */,
+				6E2474F923906B3300385A3C /* material.cpp in Sources */,
+				6E2474FE23906B3300385A3C /* shader.cpp in Sources */,
+				6E24750423906B4000385A3C /* texture.cpp in Sources */,
+				6E24750A23906B4D00385A3C /* window.cpp in Sources */,
+				6E2474FD23906B3300385A3C /* point_light.cpp in Sources */,
+				6E2474FC23906B3300385A3C /* light.cpp in Sources */,
 				6E5EDE69238CF8BF00416541 /* main.cpp in Sources */,
+				6E2474FB23906B3300385A3C /* mesh.cpp in Sources */,
+				6E2474F823906B3300385A3C /* directional_light.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:OpenGL-Test.xcodeproj">
+      location = "group:../OpenGL-Test/common_values.hpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/jashanjotdhilon/Documents/Programming/C++/OpenGL-Test/OpenGL-Test/Shaders">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
