@@ -12,6 +12,7 @@
 #include <cmath>
 #include <vector>
 
+// TODO: Adjust these includes accordingly for various development enviroments
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
@@ -30,6 +31,7 @@
 #include "point_light.hpp"
 #include "spot_light.hpp"
 #include "material.hpp"
+#include "model.hpp"
 
 const float toRadians = 3.14159265f / 180.0f;
 
@@ -44,6 +46,9 @@ Texture plainTexture;
 
 Material shinyMaterial;
 Material dullMaterial;
+
+Model xwing;
+Model spaceship;
 
 DirectionalLight mainLight;
 PointLight pointLights[MAX_POINT_LIGHTS];
@@ -148,30 +153,36 @@ int main()
     camera = Camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), -60.0f, 0.0f, 5.0f, 0.5f);
     
     brickTexture = Texture("Textures/brick.png");
-    brickTexture.LoadTexture();
+    brickTexture.LoadTextureA();
     dirtTexture = Texture("Textures/dirt.png");
-    dirtTexture.LoadTexture();
+    dirtTexture.LoadTextureA();
     plainTexture = Texture("Textures/plain.png");
-    plainTexture.LoadTexture();
+    plainTexture.LoadTextureA();
     
     shinyMaterial = Material(4.0f, 256);
     dullMaterial = Material(0.3f, 4);
+    
+    xwing = Model();
+    xwing.LoadModel("Models/x-wing.obj");
+    
+    spaceship = Model();
+    spaceship.LoadModel("Models/E45_Aircraft_obj.obj");
     
     mainLight = DirectionalLight(1.0f, 1.0f, 1.0f,
                                  0.1f, 0.1f,
                                  0.0f, 0.0f, -1.0f);
     
     unsigned int pointLightCount = 0;
-    pointLights[0] = PointLight(0.0f, 0.0f, 1.0f,
+    pointLights[0] = PointLight(1.0f, 1.0f, 1.0f,
                                 0.0f, 0.1f,
                                 0.0f, 0.0f, 0.0f,
                                 0.3f, 0.2f, 0.1f);
-    // pointLightCount++;
-    pointLights[1] = PointLight(0.0f, 1.0f, 0.0f,
+    pointLightCount++;
+    pointLights[1] = PointLight(1.0f, 1.0f, 1.0f,
                                 0.0f, 0.1f,
                                 -4.0f, 2.0f, 0.0f,
                                 0.3f, 0.1f, 0.1f);
-    // pointLightCount++;
+    pointLightCount++;
     
     unsigned int spotLightCount = 0;
     spotLights[0] = SpotLight(1.0f, 1.0f, 1.0f,
@@ -205,6 +216,7 @@ int main()
         
         camera.keyControl(mainWindow.getsKeys(), deltaTime);
         camera.mouseControl(mainWindow.getXChange(), mainWindow.getYChange());
+        // TODO: add mouse button control to handle mouse press
         
         // Clear the window
         glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
@@ -220,7 +232,12 @@ int main()
         
         glm::vec3 lowerLight = camera.getCameraPosition();
         lowerLight.y -= 0.3f;
-        spotLights[0].SetFlash(lowerLight, camera.getCameraDirection());
+        if(mainWindow.getsKeys()[GLFW_KEY_F]) {
+            spotLights[0].SetFlash(lowerLight, camera.getCameraDirection());
+        }
+        else {
+            spotLights[0].SetFlash(glm::vec3(0,0,0), glm::vec3(0,0,0));
+        }
         
         shaderList[0].SetDirectionalLight(&mainLight);
         shaderList[0].SetPointLights(pointLights, pointLightCount);
@@ -232,13 +249,16 @@ int main()
         
         glm::mat4 model = glm::mat4(1.0f);
         
+        /*
         model = glm::translate(model, glm::vec3(0.0f, 0.0f, -2.5f));
         //model = glm::scale(model, glm::vec3(0.4f, 0.4f, 1.0f));
         glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
         brickTexture.UseTexture();
         shinyMaterial.UseMaterial(uniformSpecularIntensity, uniformShininess);
         meshList[0]->RenderMesh();
+        */
         
+        /*
         model = glm::mat4() = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0f, 4.0f, -2.5f));
         //model = glm::scale(model, glm::vec3(0.4f, 0.4f, 1.0f));
@@ -246,14 +266,32 @@ int main()
         dirtTexture.UseTexture();
         dullMaterial.UseMaterial(uniformSpecularIntensity, uniformShininess);
         meshList[1]->RenderMesh();
+         */
         
         model = glm::mat4() = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0f, -2.0f, 0.0f));
         //model = glm::scale(model, glm::vec3(0.4f, 0.4f, 1.0f));
         glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
-        dirtTexture.UseTexture();
-        shinyMaterial.UseMaterial(uniformSpecularIntensity, uniformShininess);
+        plainTexture.UseTexture();
+        dullMaterial.UseMaterial(uniformSpecularIntensity, uniformShininess);
         meshList[2]->RenderMesh();
+        
+        /*
+        model = glm::mat4() = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(0.0f, -2.0f, 0.0f));
+        model = glm::scale(model, glm::vec3(0.005f, 0.005f, 0.005f));
+        glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
+        shinyMaterial.UseMaterial(uniformSpecularIntensity, uniformShininess);
+        xwing.RenderModel();
+         */
+        
+        model = glm::mat4() = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(0.25f, 0.0f, -2.0f));
+        model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));
+        model = glm::rotate(model, 90.0f * toRadians, glm::vec3(0.0f, 1.0f, 0.0f));
+        glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
+        shinyMaterial.UseMaterial(uniformSpecularIntensity, uniformShininess);
+        spaceship.RenderModel();
         
         glUseProgram(0);
         
