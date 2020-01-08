@@ -9,8 +9,11 @@
 
 #include "mesh.hpp"
 #include "texture.hpp"
+#include "entity.hpp"
 
-class Model
+class Entity;
+
+class Model : public Entity
 {
 public:
     Model();

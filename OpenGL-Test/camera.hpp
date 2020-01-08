@@ -7,7 +7,11 @@
 
 #include <GLFW/glfw3.h>
 
-class Camera
+#include "entity.hpp"
+
+class Entity;
+
+class Camera : public Entity
 {
 public:
 	Camera();
@@ -18,6 +22,13 @@ public:
 
 	glm::vec3 getCameraPosition();
 	glm::vec3 getCameraDirection();
+    
+    GLfloat GetYaw() { return yaw; }
+    GLfloat GetPitch() { return pitch; }
+    
+    glm::vec3 GetFront() { return front; }
+    glm::vec3 GetRight() { return right; }
+    glm::vec3 GetUp() { return up; }
 
 	glm::mat4 calculateViewMatrix();
 

@@ -23,6 +23,7 @@
 		6E5EDE71238CFA4400416541 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5EDE70238CFA4400416541 /* OpenGL.framework */; };
 		6E5EDE75238CFAA100416541 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5EDE74238CFAA100416541 /* libglfw.3.3.dylib */; };
 		6E5EDE76238CFE7E00416541 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5EDE72238CFA8500416541 /* libGLEW.2.1.0.dylib */; };
+		6EAA93E323C63A6600E1CF62 /* entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EAA93E123C63A6600E1CF62 /* entity.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +72,8 @@
 		6E5EDE70238CFA4400416541 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		6E5EDE72238CFA8500416541 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		6E5EDE74238CFAA100416541 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		6EAA93E123C63A6600E1CF62 /* entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = entity.cpp; sourceTree = "<group>"; };
+		6EAA93E223C63A6600E1CF62 /* entity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = entity.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				6E24750D23906BD400385A3C /* Textures */,
 				6E24750C23906BCD00385A3C /* Shaders */,
 				6E5EDE68238CF8BF00416541 /* main.cpp */,
+				6EAA93E123C63A6600E1CF62 /* entity.cpp */,
+				6EAA93E223C63A6600E1CF62 /* entity.hpp */,
 				6E24751223958CEE00385A3C /* model.cpp */,
 				6E24751323958CEE00385A3C /* model.hpp */,
 				6E24750F23906CA200385A3C /* common_values.hpp */,
@@ -216,6 +221,7 @@
 				6E2474FD23906B3300385A3C /* point_light.cpp in Sources */,
 				6E2474FC23906B3300385A3C /* light.cpp in Sources */,
 				6E5EDE69238CF8BF00416541 /* main.cpp in Sources */,
+				6EAA93E323C63A6600E1CF62 /* entity.cpp in Sources */,
 				6E2474FB23906B3300385A3C /* mesh.cpp in Sources */,
 				6E2474F823906B3300385A3C /* directional_light.cpp in Sources */,
 				6E24751423958CEE00385A3C /* model.cpp in Sources */,
