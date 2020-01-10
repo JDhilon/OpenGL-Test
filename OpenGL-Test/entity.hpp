@@ -13,8 +13,7 @@ public:
     void AddComponent(Entity* componentToAdd);
     glm::mat4 GetModelMatrix();
     void SetTranslate(glm::vec3 aTranslation);
-    void SetRotateAngle(float anAngle);
-    void SetRotateAxis(glm::vec3 anAxis);
+    void SetQuat(glm::quat aQuat);
     void SetScale(glm::vec3 aScale);
     ~Entity();
     
@@ -23,8 +22,7 @@ protected:
     std::vector<Entity*> components;
     
     glm::vec3 translate;
-    float rotateAngle;
-    glm::vec3 rotateAxis;
+    glm::quat quaternion;
     glm::vec3 scale;
     
 private:

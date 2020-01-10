@@ -24,6 +24,16 @@
 		6E5EDE75238CFAA100416541 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5EDE74238CFAA100416541 /* libglfw.3.3.dylib */; };
 		6E5EDE76238CFE7E00416541 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5EDE72238CFA8500416541 /* libGLEW.2.1.0.dylib */; };
 		6EAA93E323C63A6600E1CF62 /* entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EAA93E123C63A6600E1CF62 /* entity.cpp */; };
+		6EAA93E823C7B52700E1CF62 /* libPhysXVehicle_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA93E423C7B52700E1CF62 /* libPhysXVehicle_static_64.a */; };
+		6EAA93E923C7B52700E1CF62 /* libPhysXExtensions_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA93E523C7B52700E1CF62 /* libPhysXExtensions_static_64.a */; };
+		6EAA93EA23C7B52700E1CF62 /* libPhysX_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA93E623C7B52700E1CF62 /* libPhysX_static_64.a */; };
+		6EAA93EB23C7B52700E1CF62 /* libSnippetRender_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA93E723C7B52700E1CF62 /* libSnippetRender_static_64.a */; };
+		6EAA93F223C7B57200E1CF62 /* libPhysXCharacterKinematic_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA93EC23C7B57200E1CF62 /* libPhysXCharacterKinematic_static_64.a */; };
+		6EAA93F323C7B57200E1CF62 /* libPhysXPvdSDK_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA93ED23C7B57200E1CF62 /* libPhysXPvdSDK_static_64.a */; };
+		6EAA93F423C7B57200E1CF62 /* libSnippetUtils_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA93EE23C7B57200E1CF62 /* libSnippetUtils_static_64.a */; };
+		6EAA93F523C7B57200E1CF62 /* libPhysXCommon_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA93EF23C7B57200E1CF62 /* libPhysXCommon_static_64.a */; };
+		6EAA93F623C7B57200E1CF62 /* libPhysXCooking_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA93F023C7B57200E1CF62 /* libPhysXCooking_static_64.a */; };
+		6EAA93F723C7B57200E1CF62 /* libPhysXFoundation_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA93F123C7B57200E1CF62 /* libPhysXFoundation_static_64.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +84,16 @@
 		6E5EDE74238CFAA100416541 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		6EAA93E123C63A6600E1CF62 /* entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = entity.cpp; sourceTree = "<group>"; };
 		6EAA93E223C63A6600E1CF62 /* entity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = entity.hpp; sourceTree = "<group>"; };
+		6EAA93E423C7B52700E1CF62 /* libPhysXVehicle_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPhysXVehicle_static_64.a; path = "../../../../PhysX-4.1/physx/bin/mac.x86_64/debug/libPhysXVehicle_static_64.a"; sourceTree = "<group>"; };
+		6EAA93E523C7B52700E1CF62 /* libPhysXExtensions_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPhysXExtensions_static_64.a; path = "../../../../PhysX-4.1/physx/bin/mac.x86_64/debug/libPhysXExtensions_static_64.a"; sourceTree = "<group>"; };
+		6EAA93E623C7B52700E1CF62 /* libPhysX_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPhysX_static_64.a; path = "../../../../PhysX-4.1/physx/bin/mac.x86_64/debug/libPhysX_static_64.a"; sourceTree = "<group>"; };
+		6EAA93E723C7B52700E1CF62 /* libSnippetRender_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSnippetRender_static_64.a; path = "../../../../PhysX-4.1/physx/bin/mac.x86_64/debug/libSnippetRender_static_64.a"; sourceTree = "<group>"; };
+		6EAA93EC23C7B57200E1CF62 /* libPhysXCharacterKinematic_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPhysXCharacterKinematic_static_64.a; path = "../../../../PhysX-4.1/physx/bin/mac.x86_64/debug/libPhysXCharacterKinematic_static_64.a"; sourceTree = "<group>"; };
+		6EAA93ED23C7B57200E1CF62 /* libPhysXPvdSDK_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPhysXPvdSDK_static_64.a; path = "../../../../PhysX-4.1/physx/bin/mac.x86_64/debug/libPhysXPvdSDK_static_64.a"; sourceTree = "<group>"; };
+		6EAA93EE23C7B57200E1CF62 /* libSnippetUtils_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSnippetUtils_static_64.a; path = "../../../../PhysX-4.1/physx/bin/mac.x86_64/debug/libSnippetUtils_static_64.a"; sourceTree = "<group>"; };
+		6EAA93EF23C7B57200E1CF62 /* libPhysXCommon_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPhysXCommon_static_64.a; path = "../../../../PhysX-4.1/physx/bin/mac.x86_64/debug/libPhysXCommon_static_64.a"; sourceTree = "<group>"; };
+		6EAA93F023C7B57200E1CF62 /* libPhysXCooking_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPhysXCooking_static_64.a; path = "../../../../PhysX-4.1/physx/bin/mac.x86_64/debug/libPhysXCooking_static_64.a"; sourceTree = "<group>"; };
+		6EAA93F123C7B57200E1CF62 /* libPhysXFoundation_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPhysXFoundation_static_64.a; path = "../../../../PhysX-4.1/physx/bin/mac.x86_64/debug/libPhysXFoundation_static_64.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +101,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EAA93F223C7B57200E1CF62 /* libPhysXCharacterKinematic_static_64.a in Frameworks */,
+				6EAA93F323C7B57200E1CF62 /* libPhysXPvdSDK_static_64.a in Frameworks */,
+				6EAA93F423C7B57200E1CF62 /* libSnippetUtils_static_64.a in Frameworks */,
+				6EAA93F523C7B57200E1CF62 /* libPhysXCommon_static_64.a in Frameworks */,
+				6EAA93F623C7B57200E1CF62 /* libPhysXCooking_static_64.a in Frameworks */,
+				6EAA93F723C7B57200E1CF62 /* libPhysXFoundation_static_64.a in Frameworks */,
+				6EAA93E823C7B52700E1CF62 /* libPhysXVehicle_static_64.a in Frameworks */,
+				6EAA93E923C7B52700E1CF62 /* libPhysXExtensions_static_64.a in Frameworks */,
+				6EAA93EA23C7B52700E1CF62 /* libPhysX_static_64.a in Frameworks */,
+				6EAA93EB23C7B52700E1CF62 /* libSnippetRender_static_64.a in Frameworks */,
 				6E24751123958A6A00385A3C /* libassimp.4.1.0.dylib in Frameworks */,
 				6E5EDE76238CFE7E00416541 /* libGLEW.2.1.0.dylib in Frameworks */,
 				6E5EDE75238CFAA100416541 /* libglfw.3.3.dylib in Frameworks */,
@@ -148,6 +178,16 @@
 		6E5EDE6F238CFA4300416541 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6EAA93EC23C7B57200E1CF62 /* libPhysXCharacterKinematic_static_64.a */,
+				6EAA93EF23C7B57200E1CF62 /* libPhysXCommon_static_64.a */,
+				6EAA93F023C7B57200E1CF62 /* libPhysXCooking_static_64.a */,
+				6EAA93F123C7B57200E1CF62 /* libPhysXFoundation_static_64.a */,
+				6EAA93ED23C7B57200E1CF62 /* libPhysXPvdSDK_static_64.a */,
+				6EAA93EE23C7B57200E1CF62 /* libSnippetUtils_static_64.a */,
+				6EAA93E623C7B52700E1CF62 /* libPhysX_static_64.a */,
+				6EAA93E523C7B52700E1CF62 /* libPhysXExtensions_static_64.a */,
+				6EAA93E423C7B52700E1CF62 /* libPhysXVehicle_static_64.a */,
+				6EAA93E723C7B52700E1CF62 /* libSnippetRender_static_64.a */,
 				6E24751023958A6A00385A3C /* libassimp.4.1.0.dylib */,
 				6E5EDE74238CFAA100416541 /* libglfw.3.3.dylib */,
 				6E5EDE72238CFA8500416541 /* libGLEW.2.1.0.dylib */,
@@ -352,12 +392,15 @@
 					/usr/local/Cellar/glm/0.9.9.5/include,
 					"/usr/local/Cellar/assimp-4.1.0/include",
 					"/usr/local/Cellar/assimp-4.1.0/build/include",
+					"/Users/jashanjotdhilon/PhysX-4.1/physx/include",
+					"/Users/jashanjotdhilon/PhysX-4.1/pxshared/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glew/2.1.0/lib,
 					/usr/local/Cellar/glfw/3.3/lib,
 					"/usr/local/Cellar/assimp-4.1.0/build/code/Debug",
+					"/Users/jashanjotdhilon/PhysX-4.1/physx/bin/mac.x86_64/debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -373,12 +416,15 @@
 					/usr/local/Cellar/glm/0.9.9.5/include,
 					"/usr/local/Cellar/assimp-4.1.0/include",
 					"/usr/local/Cellar/assimp-4.1.0/build/include",
+					"/Users/jashanjotdhilon/PhysX-4.1/physx/include",
+					"/Users/jashanjotdhilon/PhysX-4.1/pxshared/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glew/2.1.0/lib,
 					/usr/local/Cellar/glfw/3.3/lib,
 					"/usr/local/Cellar/assimp-4.1.0/build/code/Debug",
+					"/Users/jashanjotdhilon/PhysX-4.1/physx/bin/mac.x86_64/debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
